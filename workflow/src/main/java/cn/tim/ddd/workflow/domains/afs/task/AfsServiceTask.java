@@ -7,11 +7,11 @@ import cn.tim.ddd.workflow.entity.AfsService;
 import java.util.List;
 
 /**
- * Created by luolibing on 2017/7/21.
+ * Created by luolibing on 2017/7/22.
  */
-public interface AfsTask {
+public abstract class AfsServiceTask implements AfsTask {
 
-    Object execute(ProcessForm processForm, AfsService afsService);
+    public abstract Object execute(ProcessForm processForm, AfsService afsService);
 
-    List<States> interestedStates();
+    public abstract List<States> interestedStates();
 }
