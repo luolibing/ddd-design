@@ -21,6 +21,13 @@ public class TemplateEntity {
 
     private Date created;
 
+    public TemplateEntity(TemplateId templateId, String name, List<SubjectEntity> subjectList) {
+        this.templateId = templateId;
+        this.name = name;
+        this.subjectList = subjectList;
+        this.created = new Date();
+    }
+
     public void addSubjectEntity(SubjectEntity subjectEntity) {
         subjectList.add(subjectEntity);
 

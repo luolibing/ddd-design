@@ -12,4 +12,6 @@ public interface TemplateJpaRepository {
     void update(TemplateEntity templateEntity);
 
     TemplateEntity findOne(TemplateId templateId);
+
+    void add(TemplateEntity templateEntity);
 }

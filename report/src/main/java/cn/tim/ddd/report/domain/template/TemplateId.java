@@ -8,7 +8,9 @@ import cn.tim.ddd.report.domain.AbstractId;
  */
 public class TemplateId extends AbstractId {
 
-    protected TemplateId(String id) {
+    public final static String IDENTITY_KEY = "templateId";
+
+    public TemplateId(String id) {
         super(id);
     }
 }
