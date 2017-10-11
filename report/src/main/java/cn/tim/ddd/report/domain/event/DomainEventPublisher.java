@@ -10,7 +10,7 @@ public class DomainEventPublisher {
 
     public static <T> void publishEvent(final T aDomainEvent) {
         DomainRegistry.eventPublisher()
-                .publishEvent(new DomainEvent<>(aDomainEvent));
+                .publishEvent(new DomainStoreEvent<>(aDomainEvent));
     }
 
 }
